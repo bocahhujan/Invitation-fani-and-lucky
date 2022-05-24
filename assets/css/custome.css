@@ -1,0 +1,423 @@
+@font-face {
+    font-family: saphira;
+    src: url("../saphira/Saphira\ DEMO.otf") format("opentype");
+}
+
+body{
+    background-color: #fff;
+    font-family: saphira , sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+
+}
+
+.fade-in {
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+  }
+  
+
+.sector-header{
+    background-image: url('../img/img_header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 7%;
+}
+
+.sector-header img{
+    max-width: 50%;
+}
+
+.sector-text{
+    background:url('../img/bg.png') repeat;
+    color: #fff;
+    font-size:2rem;
+    position: relative;
+
+}
+
+.sector-text .bunga-atas{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    z-index: 100;
+    animation: MoveBungaAatas 5s linear infinite;
+}
+
+  
+  @keyframes MoveBungaAatas {
+    0%, 100% {
+       top: 120px;
+    }
+    50% {
+        top: 150px;
+    }
+  }
+
+.sector-text .bunga-bawah{
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    z-index: 100;
+    animation: MoveBungaBawah 5s linear infinite;
+}
+
+  
+  @keyframes MoveBungaBawah {
+    0%, 100% {
+        bottom: 120px;
+    }
+    50% {
+        bottom: 150px;
+    }
+  }
+
+
+.sector-text .container{
+    background-size: 20%;
+    padding: 100px 0;
+}
+
+.sector-text img{
+    width: 20%;
+}
+
+.sector-text img.dan{
+    width: 10%;
+}
+
+.sector-text img.namafani{
+    width: 30%;
+}
+
+.sector-text img.namaluck{
+    width: 40%;
+}
+
+.colorkuning{
+    color:#f7c96b;
+}
+
+.sector-video , .sector-location , .sector-form{
+    background-image: url('../img/bg-video.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.sector-video{
+    position: relative;
+}
+
+.sector-video .bunga-video{
+    position: absolute;
+    left: -50px;
+    top: -20%;
+    z-index: 1;
+    width: 25%;
+    animation: MoveUpDown 5s linear infinite;
+}
+
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+       top: -20%;
+    }
+    50% {
+        top: -1%;
+    }
+  }
+
+
+.sector-video iframe{
+    width: 90%;
+    height: 70vh;
+    z-index: 100;
+    position: relative;
+}
+
+.sector-location{
+    background-image: url('../img/bg-location.png');
+    font-size: 1.5rem;
+}
+
+
+.sector-location h2{
+    font-size: 7rem;
+}
+
+
+.sector-location img{
+    width: 50%;
+}
+
+.sector-location a{
+    color:#000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.sector-location .boxlocation{
+    margin-top: 20vh;
+}
+
+
+.sector-form{
+    background-image: url('../img/bg-form.png');
+    padding: 100px 0;
+    color: #c2b59b;
+    background-position: top center;
+    height: 100vh;
+    position: relative;
+    background-size: contain;
+    background-color: #4f5d66;
+}
+
+.sector-form .container{
+    z-index: 10000;
+}
+
+.sector-form .bunga-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+}
+
+.sector-form h2{
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.sector-form .btn{
+    background-color: transparent;
+    border-color: #c2b59b;
+    color: #c2b59b;
+}
+
+input.input-name.form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #c2b59b;
+    border-radius: 0;
+    color: #c2b59b;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.sector-form .form-check-label{
+    font-size:1.5rem;
+}
+
+.row-box{
+    position: relative;
+    z-index: 1000;
+}
+
+input.input-name.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.sector-form img.img-title{
+    max-width: 80%;
+}
+
+.sector-form a{
+    color:#fff;
+}
+
+.sector-footer{
+    background-color: #fef6e2;
+    position: relative;
+}
+
+
+.form-check-input[type=radio]{
+    border-radius: 0;
+}
+
+.form-check-input:checked[type=radio]{
+    background-image: none;
+}
+
+.form-check-input:checked {
+    background-color: #8f843a;
+    border-color: #8f843a;
+}
+
+#ModalAwal .modal-content{
+    background-image: url('../img/img_header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#ModalAwal img.logo{
+    max-width: 37%;
+}
+
+#ModalAwal p{
+    font-size: 1.5rem;
+}
+
+#ModalAwal p.name{
+    font-size: 2rem;
+    text-shadow: 2px 2px #d7ae63;
+    font-weight: 900;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .sector-header img{
+        margin-top:30%;
+        max-width: 70%;
+    }
+
+    .sector-text{
+        font-size: 1rem;
+    }
+
+    .sector-text img{
+        width: 40%;
+    }
+
+    .sector-text img.logo{
+        width: 30%;
+    }
+
+    .sector-text img.dan{
+        width: 15%;
+    }
+    .sector-text img.namafani{
+        width: 60%;
+    }
+    
+    .sector-text img.namaluck{
+        width: 65%;
+    }
+    
+
+    .sector-text .container{
+
+        background-size: 30%;
+        padding:60px 0;
+    }
+
+    .sector-text .textbox{
+        font-size: 1rem;
+    }
+
+    .sector-video , .sector-location{
+        height: 35vh;
+    }
+
+    .sector-video .bunga-video{
+        left: -20px;
+        top: -20%;
+        width: 30%;
+    
+    }
+
+    .sector-form{
+        height: 80%;
+    }
+
+    .sector-video iframe{
+        width: 90%;
+        height: 29vh;
+    }
+
+    .sector-location h2{
+        font-size: 150%;
+    }
+
+    .sector-location p{
+        font-size: 60%;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    
+    
+    .sector-location img{
+        width: 100%;
+    }
+    
+    .sector-location a{
+        color: #000;
+        text-decoration: none;
+        font-size: 95%;
+    }
+    
+    .sector-location .boxlocation{
+        margin-top: 10px;
+    }
+    
+
+    .sector-footer img{
+        top:-135px;
+    }
+
+    .sector-form{
+        padding: 60px 10px;
+    }
+
+    .text-rekening{
+        text-align: center;
+    }
+}
